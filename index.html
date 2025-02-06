@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veagle Technology</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body class="font-sans antialiased text-gray-900">
 
     <!-- Header -->
-    <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
-        <div class="logo flex justify-between items-center">
-            <img src="./logo.png" class="h-10"/>
-            <h1 class="text-xl font-bold">Veagle Technology</h1>
+    <header class="bg-gray-800 row text-white p-1 flex justify-between items-center">
+        <div class="row col-12 col-md-4">
+            <div class="logo flex justify-between items-left">
+                <h1 class="text-xl d-flex font-bold m-auto" style="text-align: center; align-items: center;">
+                    <img src="./logo.png" class="h-10" style="align-items: center; width: auto;"/>Veagle Technology
+                </h1>
+            </div>
         </div>
-        <nav>
-            <a href="#home" class="mx-2 hover:text-gray-300">Home</a>
-            <a href="#about" class="mx-2 hover:text-gray-300">About Us</a>
-            <a href="#services" class="mx-2 hover:text-gray-300">Services</a>
-            <a href="#portfolio" class="mx-2 hover:text-gray-300">Our Work</a>
-            <a href="#testimonials" class="mx-2 hover:text-gray-300">Testimonials</a>
-            <a href="#contact" class="mx-2 hover:text-gray-300">Contact Us</a>
-        </nav>
+        <div class="col-12 col-md-8 m-2 p-0" style="align-items: right; flex-basis: content;">
+            <nav class="navigation-style">
+                <a href="#home" class="mx-2 hover:text-gray-300">Home</a>
+                <a href="#about" class="mx-2 hover:text-gray-300">About Us</a>
+                <a href="#services" class="mx-2 hover:text-gray-300">Services</a>
+                <a href="#portfolio" class="mx-2 hover:text-gray-300">Our Work</a>
+                <a href="#testimonials" class="mx-2 hover:text-gray-300">Testimonials</a>
+                <a href="#contact" class="mx-2 hover:text-gray-300">Contact Us</a>
+            </nav>
+        </div>
     </header>
-
+    
     <!-- Hero Section -->
-    <section id="home" class="hero bg-cover bg-center text-white py-20" style="background-image: url('hero-image.jpg');">
+    <section id="home" class="hero bg-cover d-flex bg-center text-white py-20" style="background-image: url(main-dashboard.png); background-size: 100%; opacity:0.9;">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-4">Innovative IT Solutions for Your Business</h2>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</button>
+            <h2 class="text-4xl font-bold mb-4 heading-text">Innovative IT Solutions for Your Business</h2>
+                <a href="#about" class="">
+                    <button class="hero-button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg">Get Started</button>
+                </a>
         </div>
     </section>
 
@@ -36,26 +45,46 @@
     <section id="about" class="section py-20">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-4">About Us</h2>
-            <p class="text-gray-700">Welcome to Veagle Technology. We specialize in providing top-notch IT services...</p>
+            <p class="text-gray-700">Welcome to Veagle Technology, where we specialize in delivering exceptional IT solutions. Our team is dedicated to
+            providing cutting-edge services designed to meet the unique needs of your business. From innovative software development
+            to AI-driven solutions, we ensure the highest standards of quality and performance to help you stay ahead in a
+            fast-paced digital world.</p>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="section bg-gray-100 py-20">
-        <div class="container mx-auto text-center">
+        <div class="row mx-auto text-center">
             <h2 class="text-3xl font-bold mb-4">Our Services</h2>
             <div class="flex flex-wrap justify-center">
-                <div class="service-item p-4 w-1/3">
+                <div class="container col-sm-4 service-item p-4 w-1/3 ">
+                    <div>
+                        <img src="web.jpg" alt="" class="m-2">
+                    </div>
                     <h3 class="text-xl font-bold mb-2">Web Development</h3>
-                    <p class="text-gray-700">Creating responsive and engaging websites...</p>
+                    <p class="text-gray-700">We create responsive, engaging websites that work flawlessly on all devices. With modern designs and intuitive
+                    navigation, we deliver exceptional user experiences. Whether you need a corporate site, portfolio, or e-commerce
+                    platform, our solutions are tailored to your brand and goals. Let us help you build a digital presence that captivates
+                    and inspires your audience.</p>
                 </div>
-                <div class="service-item p-4 w-1/3">
+                <div class="container col-sm-4 service-item p-4 w-1/3">
+                    <div>
+                        <img src="web.jpg" alt="" class="m-2">
+                    </div>
                     <h3 class="text-xl font-bold mb-2">Android & iOS App Development</h3>
-                    <p class="text-gray-700">Developing user-friendly mobile applications...</p>
+                    <p class="text-gray-700">An Android developer specializes in designing and building software applications tailored for Android devices and the
+                    Google Play Store. These applications are crafted to function seamlessly on Android smartphones and tablets and are
+                    ultimately made available for users to download from the Play Store.</p>
                 </div>
-                <div class="service-item p-4 w-1/3">
+                <div class="container col-sm-4 service-item p-4 w-1/3">
+                    <div>
+                        <img src="web.jpg" alt="" class="m-2">
+                    </div>
                     <h3 class="text-xl font-bold mb-2">AI-Based Services</h3>
-                    <p class="text-gray-700">Leveraging artificial intelligence to drive innovation...</p>
+                    <p class="text-gray-700">We harness the power of artificial intelligence to drive innovation and enhance business performance. By integrating AI
+                    solutions, we optimize processes, improve decision-making, and create smarter, more efficient systems. Our AI-driven
+                    approaches are tailored to your business needs, helping you stay ahead of the competition and unlock new opportunities
+                    for growth and success.</p>
                 </div>
             </div>
         </div>
@@ -63,12 +92,24 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="section py-20">
-        <div class="container mx-auto text-center">
+        <div class="row mx-auto text-center">
             <h2 class="text-3xl font-bold mb-4">Our Work</h2>
-            <div class="flex flex-wrap justify-center">
-                <div class="portfolio-item p-4 w-1/3">
-                    <h3 class="text-xl font-bold mb-2">Project Title</h3>
-                    <p class="text-gray-700">Short description of the project...</p>
+            <div class="flex justify-center">
+                <div class="portfolio-item col-12 col-sm-4 p-4">
+                    <h3 class="text-xl font-bold mb-2">Smart Inventory Management System</h3>
+                    <p class="text-gray-700">We developed an AI-powered inventory management system for a retail client to
+                        streamline stock tracking and improve efficiency. The system uses predictive analytics to forecast
+                        demand, automate restocking, and minimize stockouts. With real-time updates and easy integration
+                        with existing platforms, this solution has helped the client reduce costs and improve inventory
+                        accuracy.</p>
+                </div>
+                <div class="portfolio-item col-12 col-sm-4 p-4">
+                    <h3 class="text-xl font-bold mb-2">Smart Inventory Management System</h3>
+                    <p class="text-gray-700">We developed an AI-powered inventory management system for a retail client to
+                        streamline stock tracking and improve efficiency. The system uses predictive analytics to forecast
+                        demand, automate restocking, and minimize stockouts. With real-time updates and easy integration
+                        with existing platforms, this solution has helped the client reduce costs and improve inventory
+                        accuracy.</p>
                 </div>
                 <!-- More portfolio items -->
             </div>
@@ -76,17 +117,37 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="section bg-gray-100 py-20">
+    <section id="testimonials" class="section py-20 bg-gray-100">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-4">What Our Clients Say</h2>
-            <div class="flex flex-wrap justify-center">
-                <div class="testimonial-item p-4 w-1/3">
-                    <p class="text-gray-700">"Veagle Technology transformed our business..." - Client Name</p>
+            <div class="testimonial-card">
+                <div class="testimonial-user">
+                    <img src="user.jpg" alt="" class="" style="width: auto;">
+                    <div class="testimonial-user-profile">
+                        <h3 class="testimonial-name">John Doe</h3>
+                        <p class="testimonial-role">CEO, CompanyName</p>
+                    </div>
                 </div>
-                <!-- More testimonials -->
+                <p class="testimonial-text">"Veagle Technology transformed our business processes with their AI-driven
+                    solutions. Their expertise and innovative approach have improved our efficiency and helped us stay ahead
+                    of the competition. We couldn't be happier with the results!"</p>
+            </div>
+    
+            <div class="testimonial-card mt-8">
+                <div class="testimonial-user">
+                    <img src="user.jpg" alt="" class="">
+                    <div class="testimonial-user-profile">
+                        <h3 class="testimonial-name">Jane Smith</h3>
+                        <p class="testimonial-role">Marketing Director, BrandX</p>
+                    </div>
+                </div>
+                <p class="testimonial-text">"The team at Veagle Technology developed a website that exceeded our
+                    expectations. Their attention to detail and commitment to delivering a high-quality product made the
+                    entire process seamless and stress-free."</p>
             </div>
         </div>
     </section>
+
 
     <!-- Contact Us Section -->
     <section id="contact" class="section py-20">
